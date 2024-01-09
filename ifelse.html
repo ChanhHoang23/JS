@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            var a =document.getElementById("today").value;
+            var kt;
+            if(a>=1 && a<=7){
+                if (a==1){
+                    string_grade="Chu Nhat";
+                
+                }else if (a==2){
+                    string_grade="Thu hai";
+                }
+                else if (a==3){
+                    string_grade="Thu ba";
+            }
+                else if (a==4){
+                    string_grade="Thu tu";
+
+       }
+                  else if (a==5){
+                    string_grade="Thu nam";
+        }
+                 else if (a==6){
+                    string_grade="Thu sau";}
+                 else if (a==7){
+                    string_grade="Thu bay";}
+            }
+            document.getElementById("demo").innerHTML=string_grade;
+        }
+    </script>
+</head>
+
+<body>
+    
+  <div> Today: <input type="number" id="today"> </div>
+  <div> <button onclick="myFunction()">try it  </button></div> 
+    <p> Display : <span id="demo"></span></p>
+    
+</body>
+</html>
